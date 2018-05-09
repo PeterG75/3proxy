@@ -49,3 +49,22 @@ Developer
 ```
 
 The script will compile it and move the compiled executable file with a sample configuration file to the home directory of the currently logged in use (hint: echo $HOME).
+
+4. Start 3proxy by going to $HOME and running the executable of 3proxy in daemon mode:
+```
+cd $HOME
+./3proxy 3proxy.cfg
+```
+Keep in mind to edit the sample configuration file to change the users and passwords!
+
+5. To shutdown 3proxy you need to find the PID and kill it because there is no init.d file for 3proxy.
+
+Find the PID:
+```
+ps ax | grep 3proxy
+```
+
+Kill the 3proxy process
+```
+kill -9 <3proxy pid>
+```
