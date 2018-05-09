@@ -3,7 +3,7 @@
 #######################################
 # 3proxy Semi Automatic Installer     #
 # with Authentication + Sample Config #
-# Version: 1.1                        #
+# Version: 1.2                        #
 # Branch: Stable                      #
 #######################################
 # Author: Hidden Refuge               #
@@ -15,11 +15,12 @@
 mkdir /tmp/proxy
 cd /tmp/proxy
 
-# Downloading latest stable 3proxy 0.8.9
-wget --no-check-certificate https://github.com/z3APA3A/3proxy/archive/0.8.9.tar.gz
+# Downloading latest stable 3proxy 0.8.12
+wget --no-check-certificate https://github.com/z3APA3A/3proxy/archive/0.8.12.tar.gz
 
-# Extracting archive
-tar -xvzf 3proxy-0.8.9.tar.gz
+# Extracting archive and deleting it afterwards
+tar -xvzf 3proxy-0.8.12.tar.gz
+rm -rf 3proxy-0.8.12.tar.gz
 
 # Compiling
 cd 3proxy/
