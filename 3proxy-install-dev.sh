@@ -3,7 +3,7 @@
 #######################################
 # 3proxy Semi Automatic Installer     #
 # with Authentication + Sample Config #
-# Version: 1.1                        #
+# Version: 1.2                        #
 # Branch: Development                 #
 #######################################
 # Author: Hidden Refuge               #
@@ -15,11 +15,12 @@
 mkdir /tmp/proxy
 cd /tmp/proxy
 
-# Downloading latest stable 3proxy 0.8.9
-wget --no-check-certificate https://www.3proxy.ru/current/3proxy-0.9-devel.tgz
+# Downloading latest developer 3proxy 0.9 build
+wget --no-check-certificate https://3proxy.ru/current/3proxy-0.9-devel.tgz
 
-# Extracting archive
+# Extracting archive and deleting it afterwards
 tar -xvzf 3proxy-0.9-devel.tgz
+rm -rf 3proxy-0.9-devel.tgz
 
 # Compiling
 cd 3proxy/
